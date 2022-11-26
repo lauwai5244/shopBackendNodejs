@@ -71,3 +71,12 @@ exports.login = (req, res) => {
 }
 
 
+exports.test = (req, res) => {
+
+    return res.send({ status: 0, message: '測試測試' })
+
+
+
+}
+
+

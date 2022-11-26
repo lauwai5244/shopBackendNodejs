@@ -9,4 +9,6 @@ const router = express.Router()
 router.post('/reguser', userHandler.reguser)
 // 登录
 router.post('/login', userHandler.login)
+
+router.post('/test', userHandler.test)
 module.exports = router

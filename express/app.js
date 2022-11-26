@@ -30,10 +30,13 @@ app.use(function (err, req, res, next) {
 })
 
 
+// app.listen(process.env.PORT || 80, function () {
+//     console.log('api server running at http://127.0.0.1:80')
+// })
 
-app.listen(3007, function () {
-    console.log('api server running at http://127.0.0.1:3007')
+
+//localhost
+app.listen(3000, function () {
+    console.log('api server running at http://127.0.0.1:3000')
 })
-
-
 
