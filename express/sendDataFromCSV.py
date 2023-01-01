@@ -7,7 +7,7 @@ pp = pprint.PrettyPrinter(indent=4)
 
 df = pd.read_csv('C:/Users/lauchiwai/Desktop/' +
                  file, encoding="utf-8-sig")
-#df = pd.read_csv('C:/Users/USER/Desktop/吃什麼 資料更新/9折神卷正確/' + file, encoding = "utf-8-sig")
+
 
 dataList = []
 dataList = df.values.tolist()
@@ -28,4 +28,3 @@ for data in dataList:
     url = "http://127.0.0.1:3007/api/creatShopFromCSV"
     res = requests.post(url, json=json)
     pp.pprint("商店建立" + res.text)
-# for d in data :
